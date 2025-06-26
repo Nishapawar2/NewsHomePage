@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+#menu-button {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+#menu-close {
+  display: none;
+}
+.nav-items {
+  list-style-type: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+}
+.left-block {
+  flex: 2;
+  padding: 20px;
+}
+.left-block button {
+  background-color: #f15e50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 5px;
+}
+.left-block button:hover {
+  background-color: #00001a;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+.heroBottom {
+  display: flex;
+}
+.main-text {
+  width: 800px;
+  color: #00001a;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.sub-text {
+  color: #58596e;
+  line-height: 2;
+}
+
+.right-block {
+  flex: 1;
+  background-color: #00001a;
+  color: white;
+  padding: 1.5rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+.right-block h1 {
+  color: #a87022;
+}
+
+.news1 p,
+.news2 p,
+.news3 p {
+  color: #58596e;
+  line-height: 2;
+}
+hr {
+  border-bottom: 1px solid #58596e;
+}
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.card {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+.card img {
+  width: 100px;
+  height: auto;
+}
+
+.second-section {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.second-section .card h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+.second-section .card p {
+  color: #555;
+}
+.second-section .card span {
+  font-weight: 800;
+  color: #cbd5e1;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.show {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .menuClose {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-items {
+    text-align: right;
+  }
+  #menu-close {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroBottom {
+    flex-direction: column;
+  }
+  .main-text {
+    width: auto;
+  }
+  .second-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .second-section .card {
+    flex-direction: row;
+  }
+}
